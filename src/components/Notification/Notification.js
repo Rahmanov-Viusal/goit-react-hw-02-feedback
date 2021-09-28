@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import s from "./Notification.module.css";
-import PropTypes from "prop-types";
+import { Component } from 'react';
+import s from './Notification.module.css';
+import PropTypes from 'prop-types';
 
 class Notification extends Component {
   render() {

@@ -1,6 +1,5 @@
-import React from "react";
-import s from "./Section.module.css";
-import PropTypes from "prop-types";
+import s from './Section.module.css';
+import PropTypes from 'prop-types';
 
 const Section = ({ title, children }) => {
   return (
