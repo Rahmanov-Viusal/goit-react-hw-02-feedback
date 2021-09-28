@@ -1,0 +1,18 @@
+.section {
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid rgb(137 69 226 / 73%);
+  border-radius: 21px;
+  color: rgb(155 155 155);
+}
+
+.section:first-child {
+  margin-bottom: 15px;
+}
+
+.title {
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 26px;
+}

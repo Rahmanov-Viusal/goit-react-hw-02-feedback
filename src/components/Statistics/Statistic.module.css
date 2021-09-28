@@ -1,0 +1,13 @@
+.statistic__list {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.statistic__item {
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  list-style: none;
+  text-transform: uppercase;
+}
