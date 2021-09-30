@@ -1,9 +1,9 @@
-import { Component } from "react";
-import FeedbackOptions from "./components/FeedbackOptions";
-import Statistics from "./components/Statistics";
-import Section from "./components/Section";
-import Notification from "./components/Notification";
-import Container from "./components/Container";
+import { Component } from 'react';
+import FeedbackOptions from './components/FeedbackOptions';
+import Statistics from './components/Statistics';
+import Section from './components/Section';
+import Notification from './components/Notification';
+import Container from './components/Container';
 
 class App extends Component {
   state = {
@@ -11,10 +11,10 @@ class App extends Component {
     neutral: 0,
     bad: 0,
   };
-  onLeaveFeedback = ({ target }) => {
-    const { feedback } = target.dataset;
-    console.log(target.dataset);
-    this.setState(prevState => ({ [feedback]: prevState[feedback] + 1 }));
+  onLeaveFeedback = e => {
+    const { name } = e.currentTarget;
+    console.log(name);
+    this.setState(prevState => ({ [name]: prevState[name] + 1 }));
   };
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
@@ -34,13 +34,13 @@ class App extends Component {
 
     return (
       <Container className="App">
-        <Section title={"please leave feedback"}>
+        <Section title="please leave feedback">
           <FeedbackOptions
             options={options}
             onLeaveFeedback={onLeaveFeedback}
           />
         </Section>
-        <Section title={"statistics"}>
+        <Section title={'statistics'}>
           {total > 0 ? (
             <Statistics
               good={good}
