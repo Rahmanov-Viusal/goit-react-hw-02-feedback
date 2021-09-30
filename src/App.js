@@ -11,10 +11,10 @@ class App extends Component {
     neutral: 0,
     bad: 0,
   };
-  onLeaveFeedback = e => {
-    const { name } = e.currentTarget;
-    console.log(name);
-    this.setState(prevState => ({ [name]: prevState[name] + 1 }));
+  onLeaveFeedback = option => {
+    console.log(option);
+
+    this.setState(prevState => ({ [option]: prevState[option] + 1 }));
   };
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
