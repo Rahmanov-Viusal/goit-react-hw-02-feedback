@@ -38,7 +38,7 @@ class App extends Component {
             onLeaveFeedback={onLeaveFeedback}
           />
         </Section>
-        <Section title={'statistics'}>
+        <Section title="statistics">
           {total > 0 ? (
             <Statistics
               good={good}
